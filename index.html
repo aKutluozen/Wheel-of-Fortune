@@ -1,16 +1,24 @@
 <html>
+
     <head>
         <title>HTML5 Canvas Winning Wheel</title>
-        <script src="winwheel.min.js"></script>
-        <script src="jquery.min.js"></script>
-        <script src="tweenmax.min.js"></script>
+        <script src="./js/winwheel.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/tweenmax.min.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
     </head>
+
     <body>
-        <div>
-            <canvas id="canvas" width="315" height="418"></canvas>
-            <a href="#" onClick="resetWheel()">Play Again</a>
-            <a href="#" id="spin_button" onClick="startSpin()">Spin</a>
-        </div>
-        <script src="game.js"></script>
+        <canvas id="canvas" width="1000" height="1000"></canvas>
+        <img src="./img/arrow.png" class="arrow">
+        <img src="./img/arrow_shadow.png" class="arrowShadow">
+        <img src="" class="winning"/>
+
+        <audio id="good_prize" src="./fx/good_prize.wav"></audio>
+        <audio id="normal_prize" src="./fx/normal_prize.wav"></audio>
+        <audio id="spinning" src="./fx/spinning.wav" loop></audio>
+
+        <script src="./js/game.js"></script>
     </body>
+
 </html>
